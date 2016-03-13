@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find motoman_sia_support)/launch/robot_state_visualize_sia20.launch.xml">
+    <arg name="controller" value="dx100" />
+  </include>
+</launch>

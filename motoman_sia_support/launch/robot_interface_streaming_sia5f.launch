@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="version0" doc="" />
+  <include file="$(find motoman_sia_support)/launch/robot_interface_streaming_sia5.launch.xml">
+    <arg name="controller" value="fs100" />
+    <arg name="version0" value="$(arg version0)" />
+  </include>
+</launch>
