@@ -3,132 +3,128 @@
   <xacro:macro name="motoman_sia20" params="prefix">
     <link name="${prefix}base_link">
       <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/base_link.stl" />
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/base_link.dae" />
+        </geometry>
+        <material name="white">
+          <color rgba="1 1 1 1"/>
+        </material>
+      </visual>
+      <collision>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+          <mesh filename="package://motoman_sia_support/meshes/sia20/collision/base_link.stl" />
+        </geometry>
+      </collision>
+    </link>
+    <link name="${prefix}link_s">
+      <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
+        <geometry>
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_s.dae"/>
         </geometry>
         <material name="blue">
           <color rgba="0 0 1 1"/>
         </material>
       </visual>
       <collision>
-        <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/collision/base_link.stl" />
-        </geometry>
-        <material name="yellow">
-          <color rgba="0 1 1 1"/>
-        </material>
-      </collision>
-    </link>
-    <link name="${prefix}link_s">
-      <visual>
-        <origin rpy="0 0 3.1416" xyz="0 0 0"/>
-        <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_s.stl"/>
-        </geometry>
-        <material name="silver">
-          <color rgba="0.8 0.8 0.8 1"/>
-        </material>
-      </visual>
-      <collision>
-        <origin rpy="0 0 3.1416" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <mesh filename="package://motoman_sia_support/meshes/sia20/collision/link_s.stl" />
         </geometry>
-        <material name="yellow"/>
       </collision>
     </link>
     <link name="${prefix}link_l">
       <visual>
-        <origin rpy="1.57 3.1416 3.1416" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_l.stl"/>
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_l.dae"/>
         </geometry>
-        <material name="blue"/>
+        <material name="white"/>
       </visual>
       <collision>
-        <origin rpy="1.57 3.1416 3.1416" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <mesh filename="package://motoman_sia_support/meshes/sia20/collision/link_l.stl"/>
         </geometry>
-        <material name="yellow"/>
       </collision>
     </link>
     <link name="${prefix}link_e">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_e.stl"/>
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_e.dae"/>
         </geometry>
-        <material name="silver"/>
+        <material name="white"/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <mesh filename="package://motoman_sia_support/meshes/sia20/collision/link_e.stl"/>
         </geometry>
-        <material name="yellow"/>
       </collision>
     </link>
     <link name="${prefix}link_u">
       <visual>
-        <origin rpy="1.57 -3.1415 3.1416" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_u.stl"/>
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_u.dae"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
-        <origin rpy="1.57 -3.1415 3.1416" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <mesh filename="package://motoman_sia_support/meshes/sia20/collision/link_u.stl"/>
         </geometry>
-        <material name="yellow"/>
       </collision>
     </link>
     <link name="${prefix}link_r">
       <visual>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_r.stl"/>
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_r.dae"/>
         </geometry>
-        <material name="silver"/>
+        <material name="white"/>
       </visual>
       <collision>
         <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <mesh filename="package://motoman_sia_support/meshes/sia20/collision/link_r.stl"/>
         </geometry>
-        <material name="yellow"/>
       </collision>
     </link>
     <link name="${prefix}link_b">
       <visual>
-        <origin rpy="-1.57 0 0" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_b.stl"/>
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_b.dae"/>
         </geometry>
         <material name="blue"/>
       </visual>
       <collision>
-        <origin rpy="-1.57 0 0" xyz="0 0 0"/>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <mesh filename="package://motoman_sia_support/meshes/sia20/collision/link_b.stl"/>
         </geometry>
-        <material name="yellow"/>
       </collision>
     </link>
     <link name="${prefix}link_t">
       <visual>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
-          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_t.stl" />
+          <mesh filename="package://motoman_sia_support/meshes/sia20/visual/link_t.dae" />
         </geometry>
-        <material name="silver"/>
+        <material name="silver">
+          <color rgba="0.45 0.45 0.45 1"/>
+        </material>
       </visual>
       <collision>
+        <origin rpy="0 0 0" xyz="0 0 0"/>
         <geometry>
           <mesh filename="package://motoman_sia_support/meshes/sia20/collision/link_t.stl" />
         </geometry>
-        <material name="yellow"/>
       </collision>
     </link>
     <link name="${prefix}tool0" />
